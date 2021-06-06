@@ -32,6 +32,19 @@ def pick_random(my_list):
     return selection, remainder
 
 
+def print_selections(selections):
+    """ Print out selections by alphabetical name
+    """
+    max_name_len = len(max(PLAYERS, key=len)) + 1
+    for player_name in sorted(PLAYERS):
+        teams = [player['teams'] for player in selections
+                 if player['name'] == player_name][0]
+        print("{:{}}: {}".format(player_name,
+                                 max_name_len,
+                                 ', '.join(teams)))
+        time.sleep(3)
+
+
 def main():
     """ Main Program """
 
@@ -43,23 +56,17 @@ def main():
     player = 0
     while len(teams) > 0:
         selection, teams = pick_random(teams)
-        selections[player % len(PLAYERS)]['teams'].append(selection)
+        selections[player % len(PLAYERS)]['teams'].append(selection['country'])
         player += 1
 
-    print("EURO 2021 - random-selecticator")
+    print("EURO 2021 - Random-Selecticator")
     print()
     print("Players: {}".format(PLAYERS))
     print()
-    input()
+    input("Hit return to make the selections: \n")
     time.sleep(1)
 
-    name_len = len(max(PLAYERS, key=len)) + 1
-
-    for player in selections:
-        p_teams = [team['country'] for team in player['teams']]
-        print("{:{}}: {}".format(player['name'], name_len, ", ".join(p_teams)))
-        time.sleep(3)
-
+    print_selections(selections)
     print('\nAll Done')
 
 
