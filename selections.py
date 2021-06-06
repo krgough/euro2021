@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 '''
 Created on 1 Jun 2021
 
@@ -80,7 +81,7 @@ def main():
     print()
     print("Players: {}".format(PLAYERS))
     print()
-    #input()
+    input()
     time.sleep(1)
 
     name_len = len(max(PLAYERS, key=len)) + 1
@@ -88,7 +89,7 @@ def main():
     for player in selections:
         p_teams = [team['country'] for team in player['teams']]
         print("{:{}}: {}".format(player['name'], name_len, ", ".join(p_teams)))
-        #time.sleep(3)
+        time.sleep(3)
 
     print('\nAll Done')
 
