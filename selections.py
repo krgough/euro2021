@@ -4,53 +4,22 @@ Created on 1 Jun 2021
 
 @author: keithgough
 '''
-
-import random
+import json
 import logging
+import random
 import time
+
 
 LOGGER = logging.getLogger(__name__)
 
+TEAMS_FILE = 'euro2021_teams.json'
+PLAYERS_FILE = 'euro2021_players.json'
 
-TEAMS = [
-    {"group": "A", "country": "Italy"},
-    {"group": "A", "country": "Switzerland"},
-    {"group": "A", "country": "Turkey"},
-    {"group": "A", "country": "Wales"},
+with open(TEAMS_FILE) as json_file:
+    TEAMS = json.load(json_file)['teams']
 
-    {"group": "B", "country": "Belgium"},
-    {"group": "B", "country": "Denmark"},
-    {"group": "B", "country": "Finland"},
-    {"group": "B", "country": "Russia"},
-
-    {"group": "C", "country": "Austria"},
-    {"group": "C", "country": "Netherlands"},
-    {"group": "C", "country": "North Macedonia"},
-    {"group": "C", "country": "Ukraine"},
-
-    {"group": "D", "country": "Croatia"},
-    {"group": "D", "country": "Czech Replublic"},
-    {"group": "D", "country": "England"},
-    {"group": "D", "country": "Scotland"},
-
-    {"group": "E", "country": "Poland"},
-    {"group": "E", "country": "Slovakia"},
-    {"group": "E", "country": "Spain"},
-    {"group": "E", "country": "Sweden"},
-
-    {"group": "F", "country": "France"},
-    {"group": "F", "country": "Germany"},
-    {"group": "F", "country": "Hungary"},
-    {"group": "F", "country": "Portugal"},
-
-    ]
-
-
-PLAYERS = ['Carmela', 'Keith', 'Luca', 'Nick',
-           'Tony Leech', 'Raf', 'James', 'Basia',
-           'Tony Moores', 'Ann', 'David', 'Lucia',
-           'Paolo'
-           ]
+with open(PLAYERS_FILE) as json_file:
+    PLAYERS = json.load(json_file)['players']
 
 
 def pick_random(my_list):

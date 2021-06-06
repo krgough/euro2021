@@ -1,0 +1,33 @@
+{ "teams": [
+    {"group": "A", "country": "Italy"},
+    {"group": "A", "country": "Switzerland"},
+    {"group": "A", "country": "Turkey"},
+    {"group": "A", "country": "Wales"},
+
+    {"group": "B", "country": "Belgium"},
+    {"group": "B", "country": "Denmark"},
+    {"group": "B", "country": "Finland"},
+    {"group": "B", "country": "Russia"},
+
+    {"group": "C", "country": "Austria"},
+    {"group": "C", "country": "Netherlands"},
+    {"group": "C", "country": "North Macedonia"},
+    {"group": "C", "country": "Ukraine"},
+
+    {"group": "D", "country": "Croatia"},
+    {"group": "D", "country": "Czech Replublic"},
+    {"group": "D", "country": "England"},
+    {"group": "D", "country": "Scotland"},
+
+    {"group": "E", "country": "Poland"},
+    {"group": "E", "country": "Slovakia"},
+    {"group": "E", "country": "Spain"},
+    {"group": "E", "country": "Sweden"},
+
+    {"group": "F", "country": "France"},
+    {"group": "F", "country": "Germany"},
+    {"group": "F", "country": "Hungary"},
+    {"group": "F", "country": "Portugal"}
+
+    ]
+ }
