@@ -1,0 +1,9 @@
+{ "teams": [    
+    {"group": "A", "country": "Wales"},
+    {"group": "C", "country": "Ukraine"},
+    {"group": "E", "country": "Spain"},
+    {"group": "E", "country": "Sweden"},
+    {"group": "F", "country": "France"},
+    {"group": "F", "country": "Portugal"}
+    ]
+ }

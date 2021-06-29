@@ -28,8 +28,8 @@ import logging
 LOGGER = logging.getLogger(__name__)
 
 
-TEAMS_FILE = 'euro2021_teams.json'
-PLAYERS_FILE = 'euro2021_players.json'
+TEAMS_FILE = 'round_of_16_teams.json'
+PLAYERS_FILE = 'round_of_16_players.json'
 
 with open(TEAMS_FILE) as json_file:
     TEAMS = json.load(json_file)['teams']
@@ -46,7 +46,6 @@ def select_teams():
 
     reserve_teams = [team['country'] for team in TEAMS
                      if not team['country'] in rand_selection]
-
 
     selections = [{'name': player, 'teams': []}
                   for player in random.sample(PLAYERS, len(PLAYERS))]

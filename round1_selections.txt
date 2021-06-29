@@ -1,0 +1,18 @@
+Ann         : Belgium
+Basia       : Denmark
+Carmela     : Finland
+David       : Czech Replublic
+Dick        : Slovakia
+James       : Scotland
+Julie       : Netherlands
+Keith       : Austria
+Luca        : Italy
+Lucia       : Croatia
+Nick        : Switzerland
+Paolo       : England
+Raf         : Russia
+Rebecca     : North Macedonia
+Tony Leech  : Germany
+Tony Moores : Poland
+
+Reserve Teams: Turkey, Wales, Ukraine, Spain, Sweden, France, Hungary, Portugal
